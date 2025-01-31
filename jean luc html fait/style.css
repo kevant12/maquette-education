@@ -1,0 +1,265 @@
+:root {
+    --pink: #fe7ec9;
+    --blue: #488df4;
+    --green: #38c4c1;
+    --yellow: #feca02;
+    --dark: #333333;
+    --fontcolor: #42434b;
+    --light: #ffffff;
+    font-family: "Oswald", serif;
+    font-size: 10px;
+
+}
+
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    
+    /*je n'arrive pas a enlevé la bordure de l'image*/
+    border: 0;
+    color: var(--fontcolor);
+}
+
+img {
+    width: 100%;
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px;
+
+
+
+    a {
+        text-decoration: none;
+        color: var(--pink);
+        font-size: 2.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    button {
+        align-items: center;
+    }
+
+    nav {
+
+
+        display: none;
+        /*je voulais pas mettre de class*/
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 200px;
+        background-color: rgba(51, 51, 51, 1);
+        color: white;
+
+        div {
+
+            text-align: right;
+            padding-right: 30px;
+
+            button {
+                border: 0;
+                background-color: var(--dark);
+                color: white;
+                font-size: 30px;
+                margin-top: 10px;
+            }
+        }
+
+        li {
+            text-align: center;
+            padding: 5px;
+
+            &:first-child {
+                margin-top: 30px;
+            }
+
+            a {
+                color: white;
+                font-size: 2.0rem;
+                font-weight: 400;
+            }
+
+        }
+
+
+    }
+}
+
+main {
+    .hero {
+
+        h1 {
+            color: var(--blue);
+            font-size: 5rem;
+            font-weight: 700;
+            text-align: center;
+            padding-inline: 30px;
+            padding-top: 20px;
+        }
+
+        p {
+            font-size: 3.0rem;
+            font-weight: 700;
+            text-align: center;
+            color: var(--fontcolor);
+            padding-inline: 30px;
+        }
+
+        img {
+            height: 40vh;
+            /*a revoir pour avoir la photo coupé*/
+            object-fit: cover;
+            padding-inline: 30px;
+        }
+
+        ul {
+            padding: 0;
+
+            a {
+                list-style: none;
+                text-decoration: none;
+            }
+
+            li {
+                padding-block: 50px;
+                font-size: 3.0rem;
+                font-weight: 700;
+
+                a {
+
+                    text-decoration: none;
+                    color: var(--fontcolor);
+                }
+
+                text-align: center;
+
+                list-style: none;
+                text-decoration: none;
+
+                &:first-of-type {
+                    background-color: var(--green);
+
+                }
+
+                &:nth-of-type(2) {
+                    background-color: var(--yellow);
+
+                    a {
+
+                        text-decoration: none;
+                        color: var(--light);
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    background-color: var(--pink);
+
+
+                }
+
+                &:nth-of-type(4) {
+                    background-color: var(--blue);
+
+                }
+            }
+
+
+        }
+    }
+
+
+    /*a propos*/
+    section:nth-of-type(2) {
+        text-align: center;
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 300;
+            padding: 10px;
+        }
+
+        p {
+            font-size: 5rem;
+            font-weight: 700;
+        }
+
+        img {
+            padding-inline: 30px;
+            padding-top: 30px;
+        }
+
+        
+
+        article:first-of-type {
+            padding-block: 30px;
+            background-color: rgba(56, 196, 193, 0.24);
+            margin: 30px;
+            h3 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+                padding-block: 20px;
+            }
+
+            svg {
+                border: 1px solid transparent;
+                background-color: var(--green);
+                border-radius: 50%;
+            }
+
+            a {
+
+                color: var(--green);
+                font-size: 1.8rem;
+                text-decoration: none;
+                font-weight: bold;
+                
+
+            }
+        }       
+            .notre-mission{
+                margin-inline: 30px;
+                padding-block: 30px;
+                background-color: rgba(254, 126, 201, 0.24);
+
+                h3 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    padding-block: 20px;
+                }
+
+                svg {
+                    border: 1px solid transparent;
+                    background-color: var(--pink);
+                    border-radius: 50%;
+                    color: var(--light); /*on ne peut pas changer la couleur des vecteur*/
+                }
+
+                a {
+
+                    color: var(--pink);
+                    font-size: 1.8rem;
+                    text-decoration: none;
+                    font-weight: bold;
+
+                }
+            }
+
+        }
+        
+    }     
